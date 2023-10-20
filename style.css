@@ -90,6 +90,20 @@ body{
 	width:95%;
 	height:95%;
 	display:flex;
-	justify-content:center;
+	flex-direction:column;
+	justify-content:start;
 	align-items:center;
+}
+
+.Temperature{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:space-between;
+}
+
+.Temperature h5{
+	display:flex;
+	justify-content:center;
+	margin-bottom:10px;
 }
