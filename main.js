@@ -28,15 +28,16 @@ document.addEventListener("DOMContentLoaded", () => {
 	function loadWeather () {
 		var xhr = new XMLHttpRequest ();
 		console.log(xhr); 
-		xhr.open('GET','https://https://api.openweathermap.org/data/2.5/weather?lat=37.81&lon=144.96&appid=b4b558caac03a615ae12d402d91ffc58', true); 
-	}
+		xhr.open('GET',`https://https://api.openweathermap.org/data/2.5/weather?lat=${melb.lat}&lon=${melb.lon}&appid=b4b558caac03a615ae12d402d91ffc58`, true); 
+	
 
 		xhr.onload = function () {
 			if(this.status === 200) {
 				console.log(this.responseText);
 			}
-		}
+		}; 
+		xhr.send(); 
+	}
 
-
-
+	loadWeather();
 }); 
