@@ -30,7 +30,6 @@ document.addEventListener("DOMContentLoaded", () => {
 		console.log(xhr); 
 		xhr.open('GET',`https://api.openweathermap.org/data/2.5/weather?lat=${melb.lat}&lon=${melb.lon}&appid=b4b558caac03a615ae12d402d91ffc58`, true); 
 	
-
 		xhr.onload = function () {
 			if(this.status === 200) {
 				console.log(this.responseText);
